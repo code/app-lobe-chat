@@ -47,7 +47,7 @@
   "sessionGroup": {
     "config": "Grup Yönetimi",
     "confirmRemoveGroupAlert": "Bu grup silinecek, silindikten sonra bu grubun yardımcıları varsayılan listeye taşınacak, işleminizi onaylıyor musunuz?",
-    "createAgentSuccess": "Yardımcı oluşturuldu",
+    "createAgentSuccess": "Yardımcı başarıyla oluşturuldu",
     "createGroup": "Yeni Grup Ekle",
     "createSuccess": "Oluşturma Başarılı",
     "creatingAgent": "Yardımcı oluşturuluyor...",
