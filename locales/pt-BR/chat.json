@@ -20,7 +20,6 @@
   "duplicateTitle": "{{title}} Cópia",
   "historyRange": "Intervalo de Histórico",
   "inbox": {
-    "defaultMessage": "Olá, eu sou seu assistente virtual, você pode me perguntar qualquer coisa e eu farei o meu melhor para responder. Se precisar de um assistente mais profissional ou personalizado, clique em `+` para criar um assistente personalizado.",
     "desc": "Ative o cluster cerebral, inspire faíscas de pensamento. Seu assistente inteligente, aqui para conversar sobre tudo.",
     "title": "Conversa Aleatória"
   },
@@ -48,13 +47,17 @@
   "sessionGroup": {
     "config": "Gerenciar grupos",
     "confirmRemoveGroupAlert": "Você está prestes a excluir este grupo. Após a exclusão, os assistentes deste grupo serão movidos para a lista padrão. Por favor, confirme sua operação.",
+    "createAgentSuccess": "Assistente criado com sucesso",
     "createGroup": "Criar novo grupo",
     "createSuccess": "Criado com sucesso",
+    "creatingAgent": "Criando assistente...",
     "inputPlaceholder": "Digite o nome do grupo...",
     "moveGroup": "Mover para o grupo",
     "newGroup": "Novo grupo",
     "rename": "Renomear grupo",
     "renameSuccess": "Renomeado com sucesso",
+    "sortSuccess": "Reordenação bem-sucedida",
+    "sorting": "Atualizando a ordenação do grupo...",
     "tooLong": "O nome do grupo deve ter entre 1 e 20 caracteres"
   },
   "shareModal": {

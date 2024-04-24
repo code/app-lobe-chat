@@ -20,7 +20,6 @@
   "duplicateTitle": "{{title}} 副本",
   "historyRange": "歷史範圍",
   "inbox": {
-    "defaultMessage": "你好，我是你的智能助手，你可以問我任何問題，我會盡力回答你。如果需要獲得更專業或定制的助手，可以點擊`+`創建自定義助手",
     "desc": "開啟大腦集群，激發思維火花。你的智能助理，在這裡與你交流一切",
     "title": "隨便聊聊"
   },
@@ -48,13 +47,17 @@
   "sessionGroup": {
     "config": "分組管理",
     "confirmRemoveGroupAlert": "即將刪除該分組，刪除後該分組的助手將移動到預設清單，請確認你的操作",
+    "createAgentSuccess": "助理建立成功",
     "createGroup": "新增新分組",
     "createSuccess": "創建成功",
+    "creatingAgent": "助理建立中...",
     "inputPlaceholder": "請輸入分組名稱...",
     "moveGroup": "移動到分組",
     "newGroup": "新分組",
     "rename": "重新命名分組",
     "renameSuccess": "重新命名成功",
+    "sortSuccess": "重新排序成功",
+    "sorting": "分組排序更新中...",
     "tooLong": "分組名稱長度需在 1-20 之內"
   },
   "shareModal": {

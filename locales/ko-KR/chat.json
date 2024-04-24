@@ -20,7 +20,6 @@
   "duplicateTitle": "{{title}} 복사본",
   "historyRange": "대화 기록 범위",
   "inbox": {
-    "defaultMessage": "안녕하세요, 저는 당신의 인공지능 도우미입니다. 어떤 질문이든 물어보세요. 최선을 다해 답변해 드리겠습니다. 더 전문적이거나 맞춤형 도우미가 필요하다면 `+`를 클릭하여 사용자 정의 도우미를 만들 수 있습니다.",
     "desc": "뇌 클러스터를 활성화하여 창의적인 아이디어를 끌어내는 인공지능 비서입니다. 여기서 모든 것에 대해 대화합니다.",
     "title": "무작위 대화"
   },
@@ -48,13 +47,17 @@
   "sessionGroup": {
     "config": "그룹 설정",
     "confirmRemoveGroupAlert": "이 그룹을 삭제하려고 합니다. 삭제 후 이 그룹의 도우미는 기본 목록으로 이동됩니다. 작업을 확인하십시오.",
+    "createAgentSuccess": "에이전트 생성 성공",
     "createGroup": "새 그룹 추가",
     "createSuccess": "생성 성공",
+    "creatingAgent": "에이전트 생성 중...",
     "inputPlaceholder": "그룹 이름을 입력하세요...",
     "moveGroup": "그룹으로 이동",
     "newGroup": "새 그룹",
     "rename": "그룹 이름 변경",
     "renameSuccess": "이름 변경 성공",
+    "sortSuccess": "다시 정렬 성공",
+    "sorting": "그룹 정렬 업데이트 중...",
     "tooLong": "그룹 이름은 1-20자여야 합니다"
   },
   "shareModal": {

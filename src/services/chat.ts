@@ -436,15 +436,6 @@ class ChatService {
           return { content: m.content, name, role: m.role };
         }
 
-        case 'system': {
-          let content = m.content;
-          if (options?.trace?.sessionId === INBOX_SESSION_ID) {
-            content = [content, INBOX_GUIDE_SYSTEMROLE].filter(Boolean).join('\n\n');
-          }
-          console.log(content);
-          return { content: content, role: m.role };
-        }
-
         default: {
           return { content: m.content, role: m.role };
         }
@@ -454,7 +445,7 @@ class ChatService {
     return produce(postMessages, (draft) => {
       // Inject InboxGuide SystemRole
       const inboxGuideSystemRole =
-        options?.trace?.sessionId === INBOX_SESSION_ID && INBOX_GUIDE_SYSTEMROLE;
+        options?.trace?.sessionId === INBOX_SESSION_ID && INBOX_GUIDE_SYSTEMROLE();
 
       // Inject Tool SystemRole
       const hasTools = tools && tools?.length > 0;

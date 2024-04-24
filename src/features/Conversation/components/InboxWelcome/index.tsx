@@ -1,12 +1,13 @@
 'use client';
 
-import { FluentEmoji } from '@lobehub/ui';
+import { FluentEmoji, Markdown } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
-import { memo } from 'react';
+import { memo, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Center, Flexbox } from 'react-layout-kit';
 
 import AgentsSuggest from './AgentsSuggest';
-import FeatureCards from './FeatureCards';
+import QuestionSuggest from './QuestionSuggest';
 
 const useStyles = createStyles(({ css, responsive }) => ({
   container: css`
@@ -17,6 +18,10 @@ const useStyles = createStyles(({ css, responsive }) => ({
   `,
   desc: css`
     font-size: 14px;
+    text-align: center;
+    ${responsive.mobile} {
+      text-align: left;
+    }
   `,
   title: css`
     margin-top: 0.2em;
@@ -32,17 +37,37 @@ const useStyles = createStyles(({ css, responsive }) => ({
 }));
 
 const InboxWelcome = memo(() => {
+  const { t } = useTranslation('welcome');
+  const [greeting, setGreeting] = useState<'morning' | 'noon' | 'afternoon' | 'night'>();
   const { styles } = useStyles();
+
+  useEffect(() => {
+    const now = new Date();
+    const hours = now.getHours();
+
+    if (hours < 12) {
+      setGreeting('morning');
+    } else if (hours >= 12 && hours < 14) {
+      setGreeting('noon');
+    } else if (hours >= 14 && hours < 18) {
+      setGreeting('afternoon');
+    } else {
+      setGreeting('night');
+    }
+  }, []);
+
   return (
-    <Center padding={24} width={'100%'}>
+    <Center padding={16} width={'100%'}>
       <Flexbox className={styles.container} gap={16} style={{ maxWidth: 800 }} width={'100%'}>
         <Flexbox align={'center'} gap={8} horizontal>
           <FluentEmoji emoji={'👋'} size={40} type={'anim'} />
-          <h1 className={styles.title}>下午好</h1>
+          <h1 className={styles.title}>{greeting && t(`guide.welcome.${greeting}`)}</h1>
         </Flexbox>
-        <p className={styles.desc}>我是 LobeChat 你的私人智能助理，我今天能帮你做什么？</p>
+        <Markdown className={styles.desc} variant={'chat'}>
+          {t('guide.defaultMessage')}
+        </Markdown>
         <AgentsSuggest />
-        <FeatureCards />
+        <QuestionSuggest />
         {/*{t('inbox.defaultMessage')}*/}
       </Flexbox>
     </Center>

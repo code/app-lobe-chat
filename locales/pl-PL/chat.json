@@ -20,7 +20,6 @@
   "duplicateTitle": "{{title}} kopia",
   "historyRange": "Zakres historii",
   "inbox": {
-    "defaultMessage": "Cześć, jestem twoim inteligentnym asystentem, możesz zadać mi dowolne pytanie, postaram się na nie odpowiedzieć. Jeśli potrzebujesz bardziej profesjonalnego lub spersonalizowanego asystenta, kliknij `+`, aby utworzyć niestandardowego asystenta.",
     "desc": "Włącz klastry mózgów, rozpal iskrę myślenia. Twój inteligentny asystent, gotowy do rozmowy o wszystkim.",
     "title": "Pogadajmy sobie"
   },
@@ -48,13 +47,17 @@
   "sessionGroup": {
     "config": "Zarządzanie grupami",
     "confirmRemoveGroupAlert": "Czy na pewno chcesz usunąć tę grupę? Po usunięciu asystenci z tej grupy zostaną przeniesieni do domyślnej listy. Potwierdź swoje działanie.",
+    "createAgentSuccess": "Utworzenie asystenta zakończone sukcesem",
     "createGroup": "Dodaj nową grupę",
     "createSuccess": "Utworzono pomyślnie",
+    "creatingAgent": "Tworzenie asystenta...",
     "inputPlaceholder": "Wprowadź nazwę grupy...",
     "moveGroup": "Przenieś do grupy",
     "newGroup": "Nowa grupa",
     "rename": "Zmień nazwę grupy",
     "renameSuccess": "Zmiana nazwy pomyślna",
+    "sortSuccess": "Pomyślne ponowne sortowanie",
+    "sorting": "Aktualizacja sortowania grupy...",
     "tooLong": "Nazwa grupy musi mieć od 1 do 20 znaków"
   },
   "shareModal": {
