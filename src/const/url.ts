@@ -12,6 +12,7 @@ export const OFFICIAL_SITE = 'https://lobehub.com/';
 export const getCanonicalUrl = (path: string) => urlJoin(OFFICIAL_URL, path);
 
 export const GITHUB = pkg.homepage;
+export const GITHUB_ISSUES = urlJoin(GITHUB, 'issues/new');
 export const CHANGELOG = urlJoin(GITHUB, 'blob/main/CHANGELOG.md');
 export const DOCKER_IMAGE = 'https://hub.docker.com/r/lobehub/lobe-chat';
 
@@ -27,7 +28,7 @@ export const MANUAL_UPGRADE_URL = urlJoin(WIKI, 'Upstream-Sync');
 
 export const BLOG = urlJoin(OFFICIAL_SITE, 'blog');
 
-export const ABOUT = pkg.homepage;
+export const ABOUT = OFFICIAL_SITE;
 export const FEEDBACK = pkg.bugs.url;
 export const DISCORD = 'https://discord.gg/AYFPHvv2jT';
 export const PRIVACY_URL = urlJoin(OFFICIAL_SITE, '/privacy');
